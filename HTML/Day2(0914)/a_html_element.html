@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 요소</title>
+</head>
+<body>
+  <h1>블럭 레벨 요소 vs 인라인 레벨 요소</h1>
+
+  <h2>블럭 레벨 요소</h2>
+  <p>블럭 레벨 요소 : 웹 페이지 상에서 블럭을 만드는 요소</p>
+  <p>
+    - 앞뒤 요소 사이에 새로운 줄(Line) 을 만들고 나타냄 <br />
+    - 웹 페이지의 구조를 형성하는 요소 <br />
+    - 콘텐츠 전 후로 줄 바꿈이 있음 <br />
+    - 가로 폭 전체를 사용
+  </p>
+  <p>특징</p>
+  <p>
+  - 인라인 요소에 중첩 불가능<br>
+  - 다른 블록 레벨 요소에는 중첩 가능
+  </p>
+  <p>블럭 레벨 요소 예시</p>
+  <p>
+    - 'div' 태그 <div></div>
+    - 'p' 태그 <p></p>
+    - 'ul' 태그 <ul></ul>
+    - 'ol' 태그 <ol></ol>
+    - 'li' 태그 <li></li>
+    - 'header' 태그 <header></header>
+  </p>
+
+  <h2>인라인 레벨 요소</h2>
+  <p>인라인 레벨 요소 : 문서의 한 단락과 같은 큰 범위에서는 적용될 수 없고, 문장/단어 같은 작은 부분에서만 적용 가능</p>
+  <p>
+    - 인라인 요소는 새로운 줄(Line) 을 만들지 않음 <br />
+    - 웹 페이지의 텍스트 내에서 사용되는 요소 <br />
+    - 줄 바꿈 없이 텍스트의 흐름에 따라 나타남 <br />
+    - 필요한 만큼의 너비만 사용
+  </p>
+  <p>인라인 레벨 요소 예시</p>
+  <p>
+    - 'a' 태그 <a href=""></a> <br />
+    - 'span' 태그 <span></span> <br />
+    - 'img' 태그 // 예외적으로 너비와 높이 속성을 가질 수 있음 <img src="" alt=""> <br />
+    - 'strong' 태그 <strong></strong>
+  </p>
+
+  <br />
+
+  <h2>예시</h2>
+  <h4>블럭 레벨</h4>
+  <p>단락 태그는 블럭 레벨 요소입니다.1</p>
+  <p>단락 태그는 블럭 레벨 요소입니다.2</p>
+  <p>단락 태그는 블럭 레벨 요소입니다.3</p>
+
+  <h4>인라인 레벨</h4>
+  <span>텍스트나 구문을 꾸밀 때 사용하는 태그1</span>
+  <span>텍스트나 구문을 꾸밀 때 사용하는 태그2</span>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semantic</title>
+</head>
+<body>
+  <h1>시맨틱 태그 (Semantic)</h1>
+  <p>semantic : 의미의, 의미론적인</p>
+  <p>Semantic Tag : 태그 이름만 봐도 의미를 알 수 있는 태그 (Ex. p : paragraph(단락) / a : anchor (닻))</p>
+  <p>
+    - '웹 문서의 구조'를 만드는 주요 태그에서 사용 <br />
+    - HTML 소스 코드만 보고도 어느 부분이 제목, 메뉴, 본문 내용인지 쉽게 파악 가능 <br />
+    - 문서 구조가 정확히 나눠지기 때문에 PC/모바일의 웹 브라우저와 여러 스마트 기기의 다양한 화면에서 
+    웹 문서를 표현하기 용이 <br />
+    - 인터넷에서 웹 사이트를 검색할 때 필요한 내용 검색에 용이 <br />
+    - 접근성 향상, *SEO 최적화, 코드의 가독성 및 유지보수 용이성
+  </p>
+  
+  <h1>웹 문서 구조를 만드는 주요 시맨틱 태그 종류</h1>
+  <h3>1. header 태그</h3>
+  <header></header>
+  <p>
+    - 헤더 영역 <br />
+    - 주로 맨 위쪽이나 왼쪽에 위치 <br />
+    - 검색 창이나 사이트 메뉴를 삽입 <br />
+    - 웹 문서의 정보를 담는 'head' 태그와 혼동 주의  
+  </p>
+
+  <h3>2. nav 태그</h3>
+  <nav></nav>
+  <p>
+    - 네비게이션 영역 <br />
+    - 같은 웹 문서 안에서 다른 위치로 연결 or 다른 웹 문서로 연결하는 링크를 포함 <br />
+    - header, main, footer 모든 부분에서 사용 및 단독으로도 사용 가능
+  </p>
+
+  <h3>3. main 태그</h3>
+  <main></main>
+  <p>
+    - 메인 콘텐츠 영역 <br />
+    - 메뉴, 사이드 바, 로고처럼 페이지마다 똑같이 들어간 정보는 사용 X <br />
+    - 웹 문서마다 다르게 보여지는 내용으로 구성 <br />
+    - 관례 상 웹 문서에서 한 번만 사용
+  </p>
+
+  <h3>4. article 태그</h3>
+  <article></article>
+  <p>
+    - 웹에서 실제로 보여주고 싶은 내용을 삽입하는 영역  <br />
+    - 웹 문서에서 여러 개 사용 가능  <br />
+    - article 태그 안애 setion 태그 사용  <br />
+    - 블로그의 포스트나 뉴스 사이트의 기사처럼 독립된 웹 콘텐츠 항목과 같은 내용 삽입 
+  </p>
+
+  <h3>5. section 태그</h3>
+  <section></section>
+  <p>
+    - 콘텐츠 영역  <br />
+    - 몇 개의 콘텐츠를 묶는 용도로 사용 <br />
+    - div 태그와 유사하나, div 태그는 단순히 원하는 내용들을 묶는 용도로 사용
+  </p>
+
+  <h3>6. aside 태그</h3>
+  <aside></aside>
+  <p>
+    - 사이드바 영역  <br />
+    - 본문 내용 외에 왼쪽/오른쪽/아래쪽에 위치 <br />
+    - 웹 사이트의 필수 요소는 아님
+  </p>
+
+  <h3>7. footer 태그</h3>
+  <footer></footer>
+  <p>
+    - 푸터 영역 <br />
+    - 웹 문서 맨 아래 위치 <br />
+    - 사이트 제작 정보, 저작권 정보, 연락처 등을 입력
+  </p>
+
+  <h3>8. div 태그</H3>
+  <div id="header" class="footer"></div>
+  <p>
+    - divison 의 준말로, 구분/분할의 의미 <br />
+    - id와 class 속성을 사용하여 해당 영역의 의미를 붙여 사용하거나 문서 구조(영역 구별)을 지정    
+  </p>
+</body>
+</html>

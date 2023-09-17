@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML div 태그</title>
+  <style>
+    .box {
+      width: 800px;
+      border: 1px solid #111;
+    }
+
+    .highlight {
+      background-color: beige;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    #uniqueBox {
+      width: 700px;
+      border: 1px solid #111;
+      background-color: lightblue;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    #uniqueBox2 {
+      border: 1px solid #333;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>div 태그</h1>
+  <p>div 태그 : HTML 에서 가장 흔하게 사용되는 구조적 요소 중 하나로, 
+    웹 페이지의 여러 부분을 나누거나 묶는 용도로 사용하는 태그</p>
+  <p>
+    - 주로 CSS(스타일), JavaScript(기능) 을 적용하기 위해 사용
+  </p>
+  <hr />
+
+  <h2>class, id 속성</h2>
+  <p>- class, id 속성을 사용하여 HTML 태그에 스타일링이나 동작을 지정 가능</p>
+  <div class="box highlight">
+    class 속성
+    <ul>
+      <li>하나의 HTML 요소에 여러 클래스를 할당 가능 (띄어쓰기로 구분하여 작성)</li>
+      <li>여러 요소에 동일한 클래스를 할당 가능</li>
+      <li>클래스 구문 사용 시 '.' (마침표) 문자 뒤에 클래스명을 입력 후 { } (중괄호) 내에서 CSS 속성을 정의</li>
+    </ul>
+  </div>
+  <div class="box">동일한 클래스 사용하기</div>
+  <br /> 
+
+  <div id="uniqueBox">
+    id 속성
+    <ul>
+      <li>각 HTML 요소는 고유한 id 를 가져야함</li>
+      <li>id 구문 사용 시 '#' (해쉬) 문자 뒤에 아이디명을 입력 후 { } (중괄호) 내에서 CSS 속성을 정의</li>
+    </ul>
+  </div>
+  <div id="uniqueBox2">id 속성 사용하기</div>
+</body>
+</html>

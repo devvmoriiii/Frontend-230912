@@ -1,0 +1,77 @@
+(1-1) HTML 정의
+HTML : HyperText Markup Language 의 약자로, 웹 문서를 만드는 언어 (프로그래밍 언어 X, 마크업 언어 O)
+HyperText : 문서를 서로 '연결' 해주는 링크
+Markup : '태그' 를 이용하여 웹 브라우저에 내용의 위치를 '표시'
+
+(1-2) 일반 문서 vs 웹 문서
+일반 문서 : 내용 입력 프로그램과 입력 내용 확인 프로그램이 동일 (Ex. 워드, 엑셀, 메모장)
+웹 문서 : 내용 입력 프로그램과 입력 내용 확인 프로그램이 다름 (!=)
+웹 편집기(web editor) 에서 마크업(Markup) 형식으로 작성 >> 웹 브라우저(web browser) 에서 인식하여 표시
+
+(1-3) 태그
+태그 : 웹 브라우저가 각 구분을 구별하여 인식하기 위해 붙이는 꼬리표
+'<' , '>' 꺽새 (부등호) 표시를 이용하여 작성
+
+<!-- -->
+
+(2) HTML 웹 문서의 확장명
+.html : HTML 파일의 확장명
+
+(2-1) 에밋(Emmet) 기능
+Emmet 기능 : HTML, CSS 의 작성 시간을 단축시켜주는 에디터의 확장 기능으로, 일종의 코드 라이브러리 개념
+미리 정해진 문자로 태그를 조합해, 약어 문자열을 입력 시 약어를 원래의 코드로 대체하여 확장해주는 기능
+
+! 에밋 : HTML 문서 구조를 작성해주는 Emmet 기능
+
+(2-2) HTML 주석
+주석 : 브라우저에 표시되지 않으며, HTML 소스 코드를 문서화하는 것을 도움. 즉, 코드에 설명을 덧붙이는 경우에 사용
+' < ! - -  - - > ' 와 같이 꺽새와 느낌표, 하이픈 4개로 구성
+
+<!--  -->
+
+(3) HTML 기본 구조
+<!-- 
+  <!DOCTYPE html> : 문서 유형을 지정하며, 모든 HTML 문서는 문서 유형 선언으로 시작 
+  현재 문서가 HTML5 언어로 작성한 웹 문서임을 나타내는 태그
+  HTML 은 영대소문자를 구별하지 않으나, 주로 대문자 사용을 권장
+
+  <html> ~ </html> : 웹 문서의 시작과 끝을 나타내는 태그
+  웹 브라우저가 <html> 태그를 만나면 </html> 태그 부분까지를 읽어 화면에 표시
+
+  <html lang="ko"> : 'lang' 속성을 이용하여, 코드에서 사용할 언어를 지정
+  검색 사이트에서 특정 언어로 제한하여 검색하며, 화면 낭독기 사용 시 해당 언어에 맞춰 발음 및 억양, 목소리 등을 다르게 설정
+  설정 > 'emmet' 검색 > Variables 항목 > lang : ko 항목 추가 (ex. "en" = english, "ko" = korea)
+
+  <head> ~ </head> : 웹 브라우저가 웹 문서를 해석하는 데 필요한 정보를 입력하는 태그
+  정보만을 제공하므로, 웹 브라우저에 표시되지 않음
+  <meta>, <title>, <link>, <icon> 등의 태그들을 포함
+
+  <meta> : 작성자, 중요한 키워드 등과 같은 HTML에 대한 *메타 데이터를 작성 
+  * 메타 데이터 ?
+  : 데이터에 관한 데이터
+
+  <meta charset="UTF-8"> : 문서의 character 인코딩을 특정하며, 문서에서 허용하는 문자 집합을 인코딩
+  "UTF-8" 사용 시, 웹 페이지에서 어떤 문자로도 취급할 수 있다는 것을 의미
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  : 웹 사이트를 모든 장치에서 볼 수 있도록 설정 
+
+  <title> ~ </title> : 웹 문서의 제목 표기하며, HTML 문서 전체의 타이틀을 표현
+
+  <body> ~ </body> : 실제로 웹 브라우저 화면에 나타나는 내용
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 문서 구조</title>
+</head>
+<body>
+  
+</body>
+</html>
+

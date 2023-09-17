@@ -1,0 +1,24 @@
+# VSC 환경설정 #
+
+1. 탭 사이즈
+: 들여쓰기 크기 
+- 설정 > 'tab size' 검색 > 2 변경 (기본값 4)
+
+2. word wrap
+: 창 크기에 따른 자동 줄 바꿈 여부
+- 설정 > 'word wrap' 검색 > on 변경 (기본값 off)
+
+3. 확장 
+: 확장 프로그램 (= 플러그인)
+(3-1) 필수
+- Korean Language Pack : 에디터 한글화
+- Live Surver : 새로고침 없이 코딩 중인 웹 업데이트
+- Auto Rename Tag : 열림 태그 수정 시 닫힘 태그 자동 수정
+- Bracket Pair Colorizer : 여는 괄호와 닫는 괄호를 연결 (VSC 내장 기능으로 포함)
+  - 내장 기능 설정 방법
+  Editor > Colorization: Enabled 설정 체크
+  Editor > Guides : active 체크
+(3-2) 선택
+- indent-rainbow : 들여쓰기를 색으로 구분
+- Material Icon Theme : 확장자에 따른 아이콘 변경 
+- vscode-icons : 확장자에 따른 아이콘 변경 (위와 동일)

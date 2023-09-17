@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 이미지</title>
+</head>
+<body>
+  <h1>이미지 삽입 태그 (img 태그)</h1>
+  <p>img 태그 : 웹 문서에서 이미지를 삽입할 떄 가장 기본이 되는 태그</p>
+  <p>
+    - 이미지는 기술적으로 웹 페이지에 삽입되는 것이 아닌, 웹 페이지에 링크되는 개념 <br />
+    - 기본형 : <img src="이미지 파일 경로" alt="대체용 텍스트">
+  </p>
+
+  <h2>src(= source) 속성</h2>
+  <p>src 속성 : 이미지 파일의 경로를 지정하여 웹 브라우저에 알려주는 역할</p>
+  <ul>
+    <li>동일한 경로 : 이미지 파일의 이름만 표기(확장자 포함)</li>
+    <li>하위 폴더 : src 속성에 폴더 이름을 포함하여 표기</li>
+    <li>다른 서버나 웹 사이트의 이미지 : Full URL 모두 지정</li>
+  </ul>
+
+  <h2>alt(= alter) 속성</h2>
+  <p>alt 속성 : 화면 낭독기 등에서 이미지를 대신하여 읽어 줄 텍스트를 입력</p>
+  <ul>
+    <li>이미지를 제대로 표시할 수 없는 경우에 이미지 대신 텍스트가 나타남</li>
+  </ul>
+  <img src="../images/iamges-folder.jpg" alt="puppy" width="300">
+  <hr />
+
+  <h2>너비와 높이 지정 속성</h2>
+  <p>
+    width 속성 : 이미지의 너비를 지정 <br />
+    height 속성 : 이미지의 높이를 지정
+  </p>
+  <p><b>width, height 중 1개만 지정하여도 나머지 속성은 비율을 자동으로 계산</b></p>
+  <hr />
+
+  <h2>너비와 높이 지정 단위</h2>
+  <p>
+    % (퍼센트) : 이미지 크기의 값을 퍼센트로 지정하며, 
+    현재 웹 브라우저 창(부모 요소)의 너비와 높이를 기준으로 하여 상대적으로 이미지의 크기를 결정
+  </p>
+  <img src="../images/iamges-folder.jpg" alt="50%" width="50%">
+  <div style="width: 500px; border: 1px solid #000;">
+    <img src="../images/iamges-folder.jpg" alt="" width="50%">
+  </div>
+  <br>
+
+  <p>
+    px (픽셀) : 디지털 이미지의 기본 단위로, 절대적인 단위. 
+    한 이미지는 수많은 작은 점들로 구성되어 있으며, 이 작은 점을 픽셀이라고 칭함. <br />
+    기본 단위이므로 'px' 단위 생략 가능
+  </p>
+  <img src="../images/iamges-folder.jpg" alt="300px" width="300px">
+</body>
+</html>

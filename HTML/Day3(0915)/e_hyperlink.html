@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 하이퍼링크</title>
+</head>
+<body>
+  <h1>a 태그 & href 속성</h1>
+  <p>a 태그 : 링크를 삽입하는 태그</p>
+  <p>href 속성 : 링크의 수신처를 입력</p>
+  <p>
+    - 입력값에 따라 텍스트 링크 또는 이미지 링크로 사용 <br />
+    - 마우스를 링크 위로 이동하면 마우스 화살표가 작은 손으로 변경 <br />
+    - 텍스트레 링크 추가 시 밑줄이 생기고 글자색이 검은색에서 파란색으로 변경 <br />
+    - 방문하지 않은 링크는 파란색 / 1번 이상 클릭한 텍스트 링크는 자주색으로 변경
+    - 수신처에 'mailto:이메일 주소' 를 입력 시, 해당 메일 주소를 발신으로 하는 메일 쓰기로 연결
+  </p>
+  <a href="링크할 주소">텍스트 또는 이미지</a>
+  <br /> <br />
+
+  <span>텍스트 링크 생성 : </span>
+  <a href="https://naver.com">네이버 바로가기</a> <br />
+  <span>이미지 링크 생성 : </span>
+  <a href="https://naver.com"><img src="https://w7.pngwing.com/pngs/129/988/png-transparent-naver-hd-logo.png" alt="네이버 바로가기" height="50px"></a>
+  <hr>
+
+  <h2>하이퍼링크의 target 속성</h2>
+  <p>target 속성 : 링크를 새 탭에서 열어주는 속성으로, 연겨뢴 문서를 열 위치를 지정</p>
+  <Ul>
+    <li>
+      _self 속성 : 디폴트(기본값) 으로, 링크가 있는 동일한 창/탭에서 문서를 열람 / 
+      <a href="https://www.giantsclub.com/html/index.asp?" target="_self">롯데 자이언츠_self</a>
+    </li>
+    <Li>
+      _blank 속성 : 새 창/탭에서 문서를 열람 /
+      <a href="https://www.giantsclub.com/html/index.asp?" target="_blank">롯데 자이언츠_blank</a>
+    </Li>
+  </Ul>
+  <ul>
+    프레임셋을 사용하는 페이지에서 작동하는 속성 값 (HTML5에서는 사용 X)
+    <li>
+      _parent 속성 : 상위 프레임에서 문서를 열람 /
+      <a href="https://www.giantsclub.com/html/index.asp?" target="_parent">롯데 자이언츠_parent</a>
+    </li>
+    <li>
+      _top 속성 : 창 전체의 본문에서 문서를 열람 /
+      <a href="https://www.giantsclub.com/html/index.asp?" target="_top">롯데 자이언츠_top</a>
+    </li>
+  </Ul>
+    
+  
+</body>
+</html>
