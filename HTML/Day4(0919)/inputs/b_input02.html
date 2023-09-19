@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search & url & email & tel</title>
+</head>
+<body>
+  <h2 style="color: red;">search 필드</h2>
+  <p>search (검색 필드) : 검색을 위한 텍스트 필드</p>
+  <p>
+    - 모바일 기기의 웹 브라우저에서 해당 필드에 검색을 입력하면 오른쪽에 X 표시가 나타나면서 검색어를 쉽게 지우는 것을 가능하게 함
+  </p>
+
+  <h2>url 필드</h2>
+  <p>url (주소 필드) : 웹 주소를 입력하는 필드</p>
+
+  <h2 style="color: red;">email 필드</h2>
+  <p>email (이메일 필드) : 이메일 주소를 입력하는 필드</p>
+  <p>
+    - 입력 값이 지정한 형식에 맞지 않을 경우 웹 브라우저에서 오류 메세지를 보여줌
+  </p>
+
+  <h2>tel 필드</h2>
+  <P>tel (전화번호 필드) : 전화번호를 나타내는 필드</P>
+  <hr />
+
+  <h2>label 태그의 for 속성 & input 태그의 id 속성</h2>
+  <p>for 속성 : 해당 label 이 설명하고 있는 input 태그를 명시적으로 지정</p>
+  <p>id 속성 : 해당 input 필드를 고유하게 식별하는 값</p>
+  <p>
+    - for 속성의 값은 연결하려는 input 태그의 id 속성 값과 일치해야 함. <br />
+    - label 의 for 속성 값과 일치하는 id 값이 있으면, 해당 label 을 클릭할 경우 자동으로 연결된 
+    input 필드가 활성화
+  </p>
+  <hr />
+
+  <h2>예시</h2>
+  <ul style="line-height: 30px;">
+    <b>배송 정보</b> 
+    <li>
+      <label for="searchItem">상품 검색 </label>
+      <input type="search" id="searchItem"/>
+    </li>
+    <li>
+      <label for="commandSite">상품 구매 추천 사이트 </label>
+      <input type="url" id="commandSite"/>
+    </li>
+    <li>
+      <label for="email">구매자 이메일 </label>
+      <input type="email" id="email"/>
+    </li>
+    <li>
+      <label for="phone">구매자 연락처 </label>
+      <input type="tel" id="phone"/>
+    </li>
+  </ul>
+</body>
+</html>

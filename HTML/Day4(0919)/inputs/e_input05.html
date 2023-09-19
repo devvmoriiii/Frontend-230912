@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>number & range</title>
+</head>
+<body>
+  <h2>number & range 필드</h2>
+  <p>number & range : 숫자를 입력하는 필드</p>
+  <P>number : 스핀 박스<span style="font-size: 12px;">(▲▼ 위아래의 작은 화살표를 표시해서 클릭할 때마다 숫자를 높이거나 낮추는 기능)</span> 을 사용하여 숫자 선택</P>
+  <p>range : 슬라이드 막대를 움직여 숫자를 선택</p>
+  <hr />
+
+  <h2>number & range 속성</h2>
+  <p>value 속성 : 필드에 표시할 초기 값(기본 값: 최대 값의 중앙(절반) 값)</p>
+  <p>step 속성 : 숫자 간격을 지정할 수 있는 속성 (기본값: 1)</p>
+  <p>min/max 속성 : 필드에 입력할 수 있는 최소/최대값을 지정 (기본값 : 0~100)</p>
+
+  <h2>예시</h2>
+  <form action="">
+    <p>주문할 상품의 수량을 선택해주세요.</p>
+    <ul>
+      <li>
+        <label for="homePro">홈 프로페셔널 유니폼</label>
+        <input type="number" id="homePro" min="0" max="10" step="2" value="0"/> (2의 배수 단위로 최대 10개 구매 가능)
+      </li>
+      <li>
+        <label for="expPro">원정 프로페셔널 유니폼</label>
+        <input type="number" id="expPro" min="0" max="3" /> (최대 3개)
+      </li>
+      <li>
+        <label for="homeUni">홈 레플리카 유니폼</label>
+        <input type="range" id="homeUni" min="0" max="10" /> (최대 10개)
+      </li>
+      <li>
+        <label for="homeUni">원정 레플리카 유니폼</label>
+        <input type="range" id="homeUni" min="0" max="3" value="3"/> (최대 3개)
+      </li>
+    </ul>
+  </form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkbox & radio</title>
+</head>
+<body>
+  <h2>checkbox & radio 필드</h2>
+  <p>checkbox & radio : 여러 항목 중에서 원하는 항목을 선택할 때 사용하는 폼 요소</p>
+
+  <p>checkbox : 2개 이상 선택 가능</p>
+  <p>radio : 1개만 선택 가능하며, 이미 선택한 항목이 있을 경우 다른 항목을 선택하면 기존 항목이 취소</p>
+  <hr />
+
+  <h2>checkbox & radio 속성</h2>
+  <p>
+    value 속성 <b>(필수 속성)</b> : 선택한 체크 박스나 라디오 버튼을 서버에 알려줄 때 넘겨줄 값을 지정 <br />
+    영문 or 숫자로 작성 
+  </p>
+  <p>
+    checked 속성 : 여러 항모 중에서 기본으로 선택해 놓고 싶은 항목을 지정 <br />
+    속성 값 없이 키워드 작성만으로도 사용 가능
+  </p>
+  <p>
+    name 속성 <b>(radio 사용 시 필수 속성)</b> : 라디오 버튼/체크 박스가 여러 개 있는 경우, 서버 폼 프로그램에서 구분을 하기 위해 이름을 지정 <br />
+    radio 버튼은 여러 개 중에서 한 가지만 선택 가능하므로, 관련 있는 그룹끼리는 동일한 name 속성 값을 가져야 함 <br />
+    (지정하지 않을 경우 서로 다른 radio 투표로 인식하여 중복 선택이 가능해짐) 
+  </p>
+  <hr />
+
+  <h2>예시</h2>
+  <form action="">
+    <!-- 2개 이상 입력 값 (5개 구단 진출) -->
+    <!-- 5개 구단 선택 가능 (2개 이상의 입력 값) -->
+    <p><b>2023 프로야구 포스트시즌 진출팀을 예측해주세요.</b></p>
+    <ul>
+      <li>
+        <label for="lotte">
+          <input type="checkbox" value="giants" id="lotte">
+          롯데 자이언츠
+        </label>
+      </li>
+      <li>
+        <label for="LG">
+          <input type="checkbox" value="twins" id="LG">
+          엘지 트윈스
+        </label>
+      </li>
+      <li>
+        <label for="dusan">
+          <input type="checkbox" value="bears" id="dusan">
+          두산 베어스
+        </label>
+      </li>
+      <li>
+        <label for="hanhwa">
+          <input type="checkbox" value="eagles" id="hanhwa">
+          한화 이글스
+        </label>
+      </li>
+      <li>
+        <label for="kium">
+          <input type="checkbox" value="heroes" id="kium">
+          키움 히어로즈
+        </label>
+      </li>
+    </ul>
+
+    <!-- 1개만의 입력 값 -->
+    <p><b>2023 프로야구 포스트시즌 진출팀 예측 이벤트 결과 문자 수신 동의</b></p>
+    <ul>
+      <li>
+        <label for="agree">
+          <Input type="radio" value="yes" id="agree" checked name="SMS"></Input>
+          동의
+        </label>
+      </li>
+      <li>
+        <label for="disagree">
+          <Input type="radio" value="no" id="disagree" name="SMS"></Input>
+          미동의
+        </label>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
