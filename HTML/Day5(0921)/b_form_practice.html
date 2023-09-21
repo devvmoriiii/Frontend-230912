@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form 태그 실습 예제</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    fieldset {
+      margin: 15px 0px;
+    }
+    button {
+      padding: 2px 15px;
+    }
+    form {
+      width: 80%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">롯데 자이언츠 선수단 응원메시지 이벤트</h1>
+  <form action="">
+    <fieldset>
+      <legend>선수단을 응원하고 경품 받자!</legend>
+      <ul>
+        <li>
+          <label for="userId">아이디</label>
+          <input type="text" name="" id="userId" required autofocus placeholder="4자 ~ 10자 사이 공백없이">
+        </li>
+        <li>
+          <label for="userEmail">이메일</label>
+          <input type="email" name="" id="userEmail" required>
+        </li>
+        <li>
+          <label for="gift">경품 목록</label>
+          <select name="" id="gift">
+            <option value="gift1">선수단 사인볼</option>
+            <option value="gift2">홈 레플리카 유니폼</option>
+            <option value="gift3">원정 레플리카 유니폼</option>
+            <option value="gift4">홈 경기 티켓 2매</option>
+          </select>
+        </li>
+        <li>
+          <label for="memo">메모</label>
+          <textarea name="" id="memo" cols="40" rows="4" required placeholder="선수단에게 응원의 메세지를 보내주세요."></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트 결과와 새로운 소식</legend>
+      <input type="radio" name="event" id="mailYes" value="yes">
+      <label for="mailYes">메일 수신</label>
+      <input type="radio" name="event" id="mailNo" value="no" checked>
+      <label for="">메일 수신 안 함</label>
+    </fieldset>
+
+    <div>  
+      <button type="submit">이벤트 신청하기</button>
+      <button type="reset">취소</button>
+    </div>
+  </form>
+</body>
+</html>
