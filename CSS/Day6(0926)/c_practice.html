@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    main h2 {
+      color: pink;
+    }
+  </style>
+  <link rel="stylesheet" href="styles/c_practice.css">
+  <title>CSS 스타일 시트 적용 예제</title>
+</head>
+<body>
+  <!-- h1, h2, p, ul, table, thead, tbody, th, td, img, a
+  시맨틱 태그 아래 - header, main(section), footer -->
+
+  <h1>HTML 연습 예시</h1>
+  <h2>Head 태그</h2>
+  <h2>Text</h2>
+  <p>HTML 예제 실습입니다.</p>
+
+  <h2>List</h2>
+  <ul>
+    <li>항목 1</li>
+    <li>항목 2</li>
+    <li>항목 3</li>
+  </ul>
+
+  <h2>Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>이메일</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>홍길동</td>
+        <td>30</td>
+        <td>hong@example.com</td>
+      </tr>
+      <tr>
+        <td>김철수</td>
+        <td>25</td>
+        <td>kim@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Image</h2>
+  <img src="images/puppy.jpg" alt="puppy" width="200px">
+
+  <!-- 
+    header의 h1 태그에 인라인 시트로 글자색 tomato
+    main의 h2 태그에 내부 인라인 시트로 글자색 Pink
+    footer에 외부 스타일 시트로 글자색 blue
+  -->
+  <h2>시맨틱 태그</h2>
+  <header>
+    <h1 style="color: tomato;">웹사이트 제목</h1>
+    <nav>
+      <ul>
+        <li><a href="#">메뉴 1</a></li>
+        <li><a href="#">메뉴 2</a></li>
+        <li><a href="#">메뉴 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>섹션 제목</h2>
+      <h4>글 제목</h4>
+      <p>본문 내용</p>
+      <h4>글 제목</h4>
+      <p>본문 내용</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>저작권 2023. 모든 권리 보유</p>
+  </footer>
+</body>
+</html>

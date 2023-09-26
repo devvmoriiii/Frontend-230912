@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/a_css.css">
+  <title>CSS란 무엇인가?</title>
+</head>
+<body>
+  <h2>CSS</h2>
+  <p>
+    HTML : 콘텐츠의 구조, 의미를 정의 하는 마크업 언어 (태그를 이용해 문서 구조를 마크) <br />
+  CSS : Cascading Style Sheets 의 준말로 스타일, 레이아웃을 지정하는 스타일 시트 언어 
+</p>
+  <p>
+    cascading : 위에서 아래로 흐르는 & 상속 또는 종속하는 <br />
+    style : HTML 문서의 겉모습(디자인) 을 결정짓는 것 <br />
+    >> 종속된 스타일 형식을 의미
+  </p>
+  <hr />
+
+  <h2>CSS 스타일 형식 (기본 형태)</h2>
+  <p style="text-decoration: underline;">
+    선택자(스타일을 지정하려는 구조) {속성1:값; 속성2:값; ... 속성10:값;}
+  </p>
+  <p>
+    선택자 (selector) : 스타일을 어느 태그(구조) 에 적용할 것인지를 지정 <br />
+    {} : 중괄호 {} 사이에 스타일 정보를 입력 <br />
+    CSS 파일 확장명 : .css (HTML 문서와 달리 파일의 기본 구조가 없음)
+  </p> <br />
+  <p style="text-decoration: underline;">
+    head 태그 안에서 link 태그를 사용하여 .css 문서를 연결
+  </p>
+  <p>
+    link 태그 : 웹 문서와 연결시켜주는 태그 <br />
+    rel 속성 : relationship 의 준말로 연관 관계를 명시 <br />
+    href 속성 : 연결할 css 파일의 주소를 입력
+  </p> <br />
+
+  <ul>
+    스타일 규칙
+    <li>
+      속성과 값이 하나의 쌍으로 이루어진 것
+    </li>
+    <li>
+      세미콜론(;) 으로 구분하여 스타일 규칙을 여러 개 지정 가능
+    </li>
+  </ul>
+  <hr />
+  <h2>CSS 소스 경량화 및 소스 확인</h2>
+  <p>
+    css minify, css compress : 해당 페이지를 이용하여 다양한 css 소스 경량화 무료 제공 페이지 이용 가능 <br />
+    web developer : CSS 코드, CSS 적용을 배제한 페이지 확인 가능
+  </p>
+  <hr />
+
+  <h2>예시</h2>
+  <p id="p">처음으로 적용하는 CSS 스타일</p>
+</body>
+</html>

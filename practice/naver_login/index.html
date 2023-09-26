@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버 로그인 클론코딩</title>
+</head>
+<body>
+  <header>
+    <a href="https://www.naver.com/">본문 바로가기</a>
+    <h1><a href="https://www.naver.com/">NAVER</a></h1>
+    <select name="" id="">
+      <option value="ko">한국어</option>
+      <option value="en">English</option>
+      <option value="chi1">中文(简体)</option>
+      <option value="chi2">中文(台灣)</option>
+    </select>
+  </header>
+
+  <main>
+    <div id="loginWrap">
+      <div id="howToLogin">
+        <ul>
+          <li>
+            <a
+              href="https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1#none">ID 로그인</a>
+          </li>
+          <li>
+            <a
+              href="https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1#none">일회용 번호</a>
+          </li>
+          <li>
+            <a
+              href="https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1#none">QR코드</a>
+            <br />
+            PC방 등 공용PC라면 QR코드 로그인이 더 안전해요.
+            <button type="button"></button>
+          </li>
+        </ul>
+      </div>
+    
+      <div id="login">
+        <form action="">
+          <ul>
+            <li>
+              <label for="userId">아이디</label> <br />
+              <input type="text" name="" id="userId" required placeholder="아이디" /> <br />
+              <label for="userPw">비밀번호</label> <br />
+              <input type="password" name="" id="uswerPw" required placeholder="비밀번호"> <br />
+    
+              <input type="checkbox" name="" id="keepLogin">
+              <label for="keepLogin">로그인 상태 유지</label> <br />
+    
+              <a href="https://nid.naver.com/login/ext/help_ip3.html" target="_blank">IP보안</a>
+              <input type="checkbox" name="" id="IPCheck">
+              <label for="IPCheck">off</label> <br />
+    
+              <b>CapsLock</b>이 켜져 있습니다. <br />
+              <b>아이디</b>를 입력해 주세요. <br />
+              <b>비밀번호</b>를 입력해 주세요. <br />
+    
+              <button type="submit">로그인</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <div id="findAndJoin">
+      <ul>
+        <li><a href="https://nid.naver.com/user2/api/route?m=routePwInquiry&lang=ko_KR" target="_blank">비밀번호 찾기</a></li>
+        <li><a href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&lang=ko_KR" target="_blank">아이디 찾기</a></li>
+        <li><a href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&lang=ko_KR" target="_blank">회원가입</a></li>
+      </ul>
+    </div>
+
+    <div id="ad">
+      <a 
+      href="https://siape.veta.naver.com/fxclick?eu=EU10043129&calp=-&oj=VPhIBnd%2Bx8ONgoqA00JGCuRWaS8SO9PFzm%2F4giZwNCiSrveDKJqdcHCMxX4a8M1FDYHZbj73timQEar5UpZ6v5%2FZty0jdE2rg5hIlceMnG%2F734cF34vjoQaQotguCGSzdYDDy798TYwC24PEZ8KcBoMD1y8GnErjexDbDCm6imVsf4XBtOeMJwC5n97lrGq9vwZg%2BzeW8CId9zuY3vRIX6CAp6mo%2F98kruWQ0XEzvZdzYi%2FNVBfqbp%2F1xktKGUcNXwbTLqNre1vvcp5YAvVY%2FD%2BzcVdD9U4dBHm%2FZhQHCvmRSFSS0VDNJQYU8sF98vhOWR0ZfNdpVvc&ac=8842217&src=6692521&br=4334562&evtcd=P901&x_ti=1425&tb=&oid=&sid1=&sid2=&rk=Xhk55hoBLJtT_GpuFxNvkw&eltts=TmRh7n3kRZpo9UzGaUNl%2BA%3D%3D&lu=&brs=Y&&"
+      target="_blank">
+        <img src="images/banner.jpg" alt="addBanner" width="300px">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div id="info">
+      <ul>
+        <li><a href="http://www.naver.com/rules/service.html" target="_blank">이용약관</a></li>
+        <li><a href="http://www.naver.com/rules/privacy.html" target="_blank"><b>개인정보처리방침</b></a></li>
+        <li><a href="http://www.naver.com/rules/disclaimer.html" target="_blank">책임의 한계와 법적고지</a></li>
+        <li><a href="https://help.naver.com/alias/membership/p.membership/main.naver" target="_blank">회원정보 고객센터</a></li>
+      </ul>
+    </div>
+
+    <div id="copyright">
+      <a href="https://www.navercorp.com/">네이버 </a>
+      Copyright &copy; NAVER Corp. All Rights Reserved. <br/>20
+    </div>
+  </footer>
+</body>
+</html>

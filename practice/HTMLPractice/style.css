@@ -1,0 +1,31 @@
+h1, h2 {
+  color: darkblue;
+}
+
+img {
+  display: block;
+  width: 200px;
+}
+
+input {
+  width: 100%;
+}
+input, textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}

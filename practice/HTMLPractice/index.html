@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML 복습</title>
+</head>
+<body>
+  <!-- ul, ol, form, fieldset, legend, label, input(placeholder, required), textarea -->
+  <header>
+    <h1>About Me</h1>
+    <img src="images/lotteGiants.png" alt="lotte">
+  </header>
+
+  <main>
+    <section id="section1">
+      <h2>John Doe</h2>
+      <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+    </section>
+
+    <section id="section2">
+      <h2>Education & Work Experience</h2>
+      <ul>
+        <li>MSc in Computer Science, XYZ University, 2018-2020</li>
+        <li>Software Developer, ABC Corp, 2020-present</li>
+      </ul>
+    </section>
+
+    <section id="section3">
+      <h2>Certifications & Awards</h2>
+      <ol type="A">
+        <li>Certified Python Developer, 2019</li>
+        <li>Best Employee of the Year, ABC Corp, 2021</li>
+      </ol>
+    </section>
+    
+    <section id="section4">
+      <h2>Contact Form</h2>
+      <form action="">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="userName">Name:</label> <br />
+          <input type="text" name="" id="userName" required placeholder="Enter your name"> <br />
+          <label for="userEmail">Email:</label> <br />
+          <input type="email" name="" id="userEmail" required placeholder="Enter your email"> <br />
+          <label for="userMsg">Message:</label> <br />
+          <textarea name="" id="userMsg" cols="80" rows="4" required placeholder="Enter your message"></textarea> <br />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
