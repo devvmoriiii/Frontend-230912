@@ -1,0 +1,30 @@
+p {
+  color: pink;
+}
+
+h3 {
+  color: brown !important;
+}
+
+.where {
+  color: black;
+}
+
+#sajik {
+  color : blueviolet;
+}
+
+p {
+  color: cornflowerblue;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  background-color: beige;
+  color: #fff;
+}
+
+p {
+  width: inherit;
+}

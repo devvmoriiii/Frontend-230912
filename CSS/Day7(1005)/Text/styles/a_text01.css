@@ -1,0 +1,22 @@
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.one {
+  font-size: xx-small;
+}
+
+.two {
+  font-size: 150%;
+  font-style: italic;
+}
+
+.three {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.four {
+  font-size: 16px;
+  font-weight: 100;
+}

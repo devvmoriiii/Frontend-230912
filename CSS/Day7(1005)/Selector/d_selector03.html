@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/d_selector03.css">
+  <title>가상 클래스와 가상 요소</title>
+</head>
+<body>
+  <h2>가상 클래스 & 가상 요소</h2>
+  <p>
+    : 특별한 상황 또는 상태에성 요소를 스타일링
+  </p>
+  <p>
+    - 가상 클래스 : 요소의 특정 상태를 선택 <br />
+    - 가상 요소 : 실제 요소와는 별개로 페이지의 특정 부분을 선택
+  </p>
+  <hr />
+
+  <h2>사용자의 동작에 반응하는 가상 클래스 선택자 종류</h2>
+  <ul>
+    <li>
+      <p>
+        1. :hover : 요소에 마우스를 올렸을 때 선택 <br />
+        웹 요소에 마우스 커서를 올려놓았을 때 스타일을 적용
+      </p>
+    </li>
+    <li>
+      <p>
+        2. :active : 요소가 활성화되어 있을 때 선택 <br />
+        웹 요소를 활성화했을 때의 스타일을 적용
+      </p>
+    </li>
+    <li>
+      <p>
+        3. :focus : 요소가 포커스되었을 때를 선택 <br />
+        웹 요소에 초점이 맞추어졌을떄의 스타일을 적용
+      </p>
+    </li>
+    <li>
+      <p>
+        4. :visited : 요소가 방문한 링크를 선택 <br />
+      </p>
+    </li>
+    <li>
+      <p>
+        5. :link : 방문하지 않은 링크에 스타일을 적용 <br />
+      </p>
+    </li>
+  </ul>
+  <br />
+
+  <p style="color:red; font-weight: 800;">
+    아래 순서에 따라 가상 클래스가 적용됨.
+  </p>
+  <ol>
+    <li>:link</li>
+    <li>:visited</li>
+    <li>:hover</li>
+    <li>:active</li>
+    <li>:focus</li>
+  </ol>
+  <hr />
+
+  <h2>예시</h2>
+  <nav class="navi">
+    <ul>
+      <li><a href="#">이용 안내</a></li>
+      <li><a href="#">객실 소개</a></li>
+      <li><a href="#">예약 방법 및 요금</a></li>
+      <li><a href="#">예약하기</a></li>
+    </ul>
+  </nav>
+
+  <form action="">
+    <input type="text" />
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/a_selector01.css">
+</head>
+<body>
+  <div>
+    <h1>CSS 고급 선택자 - 연결 선택자</h1>
+    <p>
+      연결 선택자 (= 컴비네이션 선택자, 조합 선택자) : 선택자와 선택자를 연결해 적용 대상을 제한하는 선택자
+    </p>
+    
+    <ul>
+      <li>
+        <p>1. 동시 선택자: 여러 선택자를 쉼표(,)로 구분하여 한번에 스타일을 적용</p>
+      </li>
+    <li>
+    </p>2. 하위 선택자: 상위 요소 아래에 있는 '모든' 하위 요소를 선택 <br />
+    상위 요소와 하위 요소를 나란히 작성 후 띄어쓰기로 구분하여 적용</p>
+  </li>
+  <Li>
+    <p>3. 자식 선택자: 상위 요소 '바로 아래'에 있는 하위 요소만을 선택 <br />
+      두 요소 사이에 > (부등호) 를 표시해 부모 요소와 자식 요소를 구분 (손자, 손자의 손자 요소에는 적용되지 않음)</p>
+    </Li>
+    <li>
+      <p>4. 인접 형제 선택자: 동일한 부모를 가진 바로 다음의 형제 요소를 선택 <br/>
+        요소1과 요소2 사이에 + 기호를 사용</p>
+      </li>
+      <li>
+        <p>
+          5. 형제 선택자: 형제 요소들에 모두 스타일 적용 <br />
+          요소1과 요소2 사이에 ~ 기호를 사용
+        </p>
+      </li>
+    </ul>
+    <hr />
+  </div>
+    
+  <h1>예시</h1>
+  <h2>안녕하세요</h2>
+  <p>오늘은 10월 5일 입니다.</p>
+  <p>오늘은 목요일 입니다.</p>
+  <h3>만나서 반갑습니다.</h3>
+  
+  <section>
+    <p>제 이름은 이승아입니다.</p>
+    <p>코리아 it 아카데미에서 프론트엔드 강의를 하고 있습니다.</p>
+    <div>
+      <p>하위 선택자(section 태그의 손자 요소)</p>
+    </div>
+  </section>
+  <p>주말강의와 평일강의를 하고 있습니다.</p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.navi ul li {
+  float: left;
+  width: 150px;
+  padding: 10px;
+  
+}
+
+.navi a:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.navi a:focus {
+  background-color: blue;
+}
+
+.navi a:active {
+  background-color: red;
+}
+
+input:focus {
+  background-color: lightblue;
+}
+
+.navi a:link, .navi a:visited {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
