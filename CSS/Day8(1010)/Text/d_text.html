@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/d_text.css">
+  <title>텍스트 기타 속성</title>
+</head>
+<body>
+  <h2>텍스트 기타 속성</h2>
+  <ul>
+    <li>
+      <p>
+        text-decoration 속성 : 텍스트의 줄을 표시하거나 제거하는 속성 <br />
+        하이퍼링크를 적용할 때 기본적으로 생성되는 밑줄을 제거할 때 주로 사용한다.
+      </p>
+      <ol type="a">
+        <li>
+          none : 텍스트 줄 없음
+        </li>
+        <li>
+          underline : 텍스트 아래에 밑줄 표시
+        </li>
+        <li>
+          overline : 텍스트 위에 윗줄 표시
+        </li>
+        <li>
+          line-through : 텍스트 중앙으로 줄 표시 (= 취소선)
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        text-shadow 속성 : 텍스트에 그림자 효과를 추가하는 속성 <br />
+        사이트 제목처럼 강조해야 할 글자에 주로 사용한다. <br />
+        아래 4가지 값을 공백으로 구분하여 작성한다. (ex. 2px 2px 2px #aaa)
+      </p>
+      <ol type="a">x
+        <li>
+          가로 거리 (필수) : 텍스트부터 그림자까지의 거리를 지정한다. (양수 값 : 글자의 오른쪽에 그림자 생성 | 음수 값 : 글자의 왼쪽에 그림자가 생성)
+        </li>
+        <li>
+          세로 거리 (필수) : 텍스트부터 그림자까지의 거리를 지정한다. (양수 값 : 글자의 아래쪽에 그림자가 생성 | 음수 값 : 글자의 위쪽에 그림자가 생성)
+        </li>
+        <li>
+          번짐 정도 : 그림자의 번짐 정도를 지정하며, 기본값은 0 이다. (양수 값 : 글자의 모든 방향으로 퍼져나가 크게 표시 | 음수 값 : 글자의 모든 방향으로 축소되어 작게 표시)
+        </li>
+        <li>
+          색상 : 한 가지 또는 여러 색상이 지정 가능하며, 여러 색상 지정 시 공백으로 구분한다. 기본 값은 현재 글자 색이다.
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        text-transform 속성 : 영문자 표기 시 텍스트의 대소문자를 변경하는 속성 (한글 적용 불가, only 영어 & 기타 외국어 가능)
+      </p>
+      <ol type="a">
+        <li>
+          none: 변환되지 않음 (기본값)
+        </li>
+        <li>
+          capitalize : 첫 번째 글자를 대문자로 변환
+        </li>
+        <li>
+          uppercase : 모든 글자를 대문자로 변환
+        </li>
+        <li>
+          lowercase : 모든 글자를 소문자로 변환
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        letter-spacing 속성 : 글자와 글자 사이의 간격을 조정하는 속성 <br />
+        word-spacing 속성 : 단어와 단어 사이 간격을 조정하는 속성
+      </p>
+    </li>
+  </ul>
+
+
+  <hr />
+  <h2>예시</h2>
+  <div class="ex">
+    <h2>Text Decoration</h2>
+    <a href="#">text-decoration : none</a>
+    <p id="underline">text-decoration : underline</p>
+    <p id="overline">text-decoration : overline</p>
+    <p id="line-through">text-decoration : line-through</p>
+  </div>
+
+  <div class="ex">
+    <h2>Text Shadow</h2>
+    <p class="shadow-basic">Text Shadow 1 (basic)</p>
+    <p class="shadow-reverse">Text Shadow 2 (reverse)</p>
+    <button class="shadowBtn">Text Shadow 3</button>
+  </div>
+
+  <div class="ex">
+    <h2>Text Transform</h2>
+    <p id="capitalize">hello, HtMl! (capitalize)</p>
+    <p id="uppercase">hello, HtMl! (uppercase)</p>
+    <p id="lowercase">hello, HtMl! (lowercase)</p>
+  </div>
+
+  <div class="ex">
+    <h2>Spacing</h2>
+    <p id="letter-spacing">hello, HTML and CSS!</p>
+    <p id="word-spacing">hello, HTML and CSS!</p>
+  </div>
+</body>
+</html>

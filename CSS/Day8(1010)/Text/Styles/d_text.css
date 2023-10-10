@@ -1,0 +1,62 @@
+.ex {
+  border: 1px solid #ccc;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+#ex a {
+  text-decoration: none;
+}
+#underline {
+  text-decoration: underline;
+}
+#overline {
+  text-decoration: overline;
+}
+#line-through {
+  text-decoration: line-through;
+}
+
+
+.shadow-basic {
+  font-size: 18px;
+  color: cornflowerblue;
+  text-shadow: 2px 2px 2px #999;
+}
+
+.shadow-reverse {
+  font-size: 18px;
+  color: cornflowerblue;
+  text-shadow: -5px -5px 2px #999;
+}
+
+.shadowBtn {
+  background-color: tomato;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  text-shadow: 1px 1px 10px #000;
+}
+
+
+#capitalize {
+  text-transform: capitalize;
+}
+
+#uppercase {
+  text-transform: uppercase;
+}
+
+#lowercase {
+  text-transform: lowercase;
+}
+
+
+#letter-spacing {
+  letter-spacing: 5px;
+}
+
+#word-spacing {
+  word-spacing: 10px;
+}

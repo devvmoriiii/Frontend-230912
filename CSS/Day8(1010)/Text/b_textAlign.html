@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/b_textAlign.css">
+  <title>텍스트 정렬</title>
+</head>
+<body>
+  <h2>텍스트 정렬</h2>
+  <ul>
+    <li>
+      <p>
+        text-align 속성 : 문단의 텍스트 정렬 방법을 지정하는 속성 <br />
+        <span style="font-weight: bold;">왼쪽 정렬, 양쪽 정렬은 오른쪽 여백이 없으나, 오른쪽 정렬에서는 왼쪽 여백이 자동으로 생성된다.</span> <br />
+        속성 값은 아래와 같으며, 기본 값은 left (왼쪽 정렬) 이다.
+      </p>
+      <ol type="a">
+        <li>
+          start : 현재 텍스트 줄의 시작 위치에 맞추어 문단을 정렬
+        </li>
+        <li>
+          end : 현재 텍스트 줄의 끝 위치에 맞추어 문단을 정렬
+        </li>
+        <li>
+          left, right : 각각 왼쪽, 오른쪽에 맞추어 문단을 정렬
+        </li>
+        <li>
+          center : 가운데에 맞추어 문단을 정렬
+        </li>
+        <li>
+          justify : 모든 텍스트 줄이 동일한 너비가 되도록 단어 사이의 간격을 조절 즉, 양쪽에 맞추어 문단을 정렬
+        </li>
+        <li>
+          match-parent : 부모 요소에 따라 문단을 정렬
+        </li>
+      </ol>
+    </li>
+  </ul>
+
+  <hr />
+  
+  <h2>예시</h2>
+  <p class="ex">2024년 프로야구 우승 롯데 자이언츠 (default)</p>
+  <p class="ex" id="left">2024년 프로야구 우승 롯데 자이언츠 (left)</p>
+  <p class="ex" id="right">2024년 프로야구 우승 롯데 자이언츠 (right)</p>
+  <p class="ex" id="center">2024년 프로야구 우승 롯데 자이언츠 (center)</p>
+  <p class="ex" id="justify">2024년 프로야구 우승 롯데 자이언츠 (justify)2024년 한국시리즈 우승 롯데 자이언츠(justify)</p>
+</body>
+</html>
