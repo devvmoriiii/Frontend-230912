@@ -1,0 +1,50 @@
+.ex {
+  border: 1px solid #ccc;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+#disc {
+  list-style-type: disc;
+}
+#circle {
+  list-style-type: circle;
+}
+#square {
+  list-style-type: square;
+}
+#none {
+  list-style-type: none;
+}
+
+#leadingZero {
+  list-style-type: decimal-leading-zero;
+}
+#lowerRoman {
+  list-style-type: lower-roman;
+}
+#upperRoman {
+  list-style-type: lower-roman;
+}
+#lowerAlpha {
+  list-style-type: lower-alpha;
+}
+#upperAlpha {
+  list-style-type: upper-alpha;
+}
+
+#ul-image {
+  list-style-image: url(../images/bunny.jpeg);
+}
+
+#inside {
+  list-style-position: inside;
+}
+
+#listAll {
+  list-style: square inside ;
+}

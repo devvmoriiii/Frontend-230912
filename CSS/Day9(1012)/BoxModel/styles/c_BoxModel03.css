@@ -1,0 +1,57 @@
+.ex {
+  border: 1px solid #ccc;
+  margin: 20px 0px;
+  padding: 10px;
+}
+span {
+  font-weight: 700;
+}
+
+#border div {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  display: inline-block;
+  margin: 20px 50px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 150px;
+}
+
+.border:nth-child(2) {border: 3px none #000;}
+.border:nth-child(3) {border: 3px solid #000}
+.border:nth-child(4) {border: 3px dashed #000}
+.border:nth-child(5) {border: 3px dotted #000}
+.border:last-child {border: 3px double #000}
+
+.width {
+  border-color: #777;
+  border-style: solid;
+}
+.width:nth-child(2) {border-width: 3px}
+.width:nth-child(3) {border-width: 3px 6px 9px}
+.width:nth-child(4) {border-width: 3px 6px;}
+.width:nth-child(5) {border-width: 3px 6px 9px 12px;}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 20px 50px;
+}
+
+.radius:nth-child(3) {border-radius: 25%;}
+.radius:nth-child(4) {border-radius: 50%;}
+
+.radiusEx {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  background-color: aliceblue;
+  border: 2px solid #222;
+}
+
+.radiusEx:nth-child(2) {border-radius: 50px / 30px;}
+.radiusEx:nth-child(3) {border-bottom-right-radius: 50% 30%}
+.radiusEx:nth-child(4) {border-top-left-radius: 50px 30px;}
+.radiusEx:nth-child(5) {border-bottom-left-radius: 30px;}

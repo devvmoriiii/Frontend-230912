@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/a_BoxModel01.css">
+  <title>블록 & 인라인</title>
+</head>
+<body>
+  <h2>CSS Box Model</h2>
+  <p>
+    CSS Box Model : 웹 문서에서 내용을 배치 시 각 요소를 박스 형태로 구성 <br />
+    각각의 박스 모델은 실제 내용이 들어가는 콘텐츠 영역과 테두리, 여백으로 구성
+  </p>
+  <ul>
+    <li>
+      <p>
+        블록 레벨 요소 : 태그를 사용해 요소 삽입 시 혼자 한 줄을 차지 (= 해당 요소의 너비가 100%). 블록 레벨 요소의 왼쪽이나 오른쪽에 다른 요소가 위치할 수 없다. (ex. h1, div, p, ul, ol, li, table, 시맨틱 태그 등) <br />
+        width, height 등의 크기 속성이 모두 조절 가능하다.
+      </p>
+    </li>
+    <li>
+      <p>
+        인라인 레벨 요소 : 태그를 사용해 요소 삽입 시 해당 콘텐츠만큼만의 영역을 차지. 나머지 공간에 다른 요소를 삽입할 수 있으며, 한 줄에 여러 개의 인라인 레벨 요소를 삽입 가능하다. (ex. span, image, strong, input, br 등) <br />
+        width, height 등의 크기 속성이 적용되지 않는다. 따라서 line-height 속성 등의 텍스트 속성을 사용하여 크기 조절이 필요하다.
+      </p>
+    </li>
+  </ul>
+    <p style="font-weight: 700;">블록 레벨 요소는 다른 블록 레벨 요소 또는 인라인 레벨 요소를 포함할 수 있다. 단, 인라인 레벨 요소는 다른 블록 레벨 요소를 포함할 수 없다.</p>
+  <hr />
+
+  <h2>예시</h2>
+  <div class="ex" id="exBlock">
+    <h2>블록 레벨 요소</h2>
+    <div>
+      2023년 프로야구
+      <p id="red">정규 시즌 (p 태그)</p>
+      우승팀은
+    </div>
+    <p>LG 트윈스</p>
+  </div>
+
+  <div class="ex" id="exInline">
+    <h2>인라인 레벨 요소</h2>
+    <div>
+      2023년 프로야구
+      <span id="red">정규 시즌 (span 태그)</span>
+      우승팀은
+    </div>
+    <p>LG 트윈스</p>
+  </div>
+</body>
+</html>

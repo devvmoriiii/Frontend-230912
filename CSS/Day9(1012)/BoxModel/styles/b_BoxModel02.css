@@ -1,0 +1,43 @@
+.ex {
+  border: 1px solid #ccc;
+  margin: 20px 0px;
+  padding: 10px;
+}
+span {
+  font-weight: 700;
+}
+
+.box-sizing, .box-shadow {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 20px 50px;
+}
+.box-sizing {
+  border: 10px solid #ccc;
+  padding: 20px;
+}
+
+.box-sizing:nth-child(2) {
+  line-height: 200px;
+  background-color: bisque;
+  box-sizing: content-box;
+}
+.box-sizing:nth-child(3) {
+  line-height: 140px;
+  background-color: lightcyan;
+  box-sizing: border-box;
+}
+
+
+.box-shadow {
+  border: 1px solid #333;
+  line-height: 200px;
+}
+.box-shadow:nth-child(2) {
+  box-shadow: 5px 5px 10px 0px #333, -5px -5px 10px #aaa
+}
+.box-shadow:last-child {
+  box-shadow: 5px 5px 15px 0px tomato inset;
+}
