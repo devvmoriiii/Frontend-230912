@@ -1,0 +1,50 @@
+/* CSS Flexbox */
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: tomato;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: wrap column; */
+  
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background-color: beige;
+  /* width: 300px; */
+  /* flex: 1  */
+}
+
+#article1 {
+  flex: 1 200px
+}
+
+#article2 {
+  flex : 1 150Px;
+  order: 1
+}
+
+#article3 {
+  flex: 2 500px
+}
+
+

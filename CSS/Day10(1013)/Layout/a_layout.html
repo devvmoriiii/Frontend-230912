@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/a_layout.css">
+  <title>CSS 레이아웃 기본</title>
+</head>
+
+<body>
+  <h2>CSS Layout - 일반 대열 (normal flow)</h2>
+  <p>
+    : HTML 태그가 가지고 있는 기본 배치
+  </p>
+  <ul>
+    <li>
+      블럭 레벨 요소 : 부모 요소의 너비 100% 와 자체 콘텐츠의 최대 높이를 기본으로 가짐
+    </li>
+    <li>
+      인라인 레벨 요소 : 자체 콘텐츠의 최대 너비와 최대 높이를 기본으로 가짐 (너비, 높이 지정 불가)
+      <ul>
+        <br />
+        <span>블록 레벨 요소로 변경 방법</span>
+        <li>
+          <p>
+            {display : block} 으로 변경
+          </p>
+        </li>
+        <li>
+          <p>
+            {display : inline-block} 으로 변경 (두 가지의 성격이 혼합)
+          </p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <hr />
+
+  <div class="ex">
+    <h3>기본 문서 flow</h3>
+    <p>
+      나는 기본 블록 수준 요소입니다. 나와 인접한 블록 수준 요소는 내 아래 세 줄에 자리합니다.
+    </p>
+    <p>
+      기본값으로 우리는 우리 부모 요소의 너비 100% 를 넘나들며, 우리 자녀 콘텐츠의 최대 높이를 취합니다.
+      우리의 줄 너비와 줄 높이는 우리의 콘텐츠 + padding + border 너비 및 높이입니다.
+    </p>
+    <p>
+      우리는 여백으로 구분됩니다. 여백 축소로 때문에 우리의 여백 중의 하나의 너비로 구분됩니다. 두 개의 여백이 아니라.
+    </p>
+    <p>
+      인라인 요소 <span>이 것과 같은</span> 그리고 <span>이것이</span> 차례로 같은 라인에,
+      그리고 같은 라인에 공간이 있을 경우 인접한 텍스트 노드에 자리를 잡게 됩니다. 인라인 요소가
+      오버플로할 경우
+      <span>(이 경우 같이 텍스트를 포함했을 경우) 가능하면 새 줄로 접혀 들어갑니다.</span>
+      그렇지 않으면 새로운 라인으로 계속 진행될 것입니다. 이 이미지가 하는 것처럼 <img src="images/icon_bunny.png" alt="">
+    </p>
+  </div>
+</body>
+
+</html>

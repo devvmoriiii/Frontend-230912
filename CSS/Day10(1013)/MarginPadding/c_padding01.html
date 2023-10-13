@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/c_padding01.css">
+  <title>CSS Padding</title>
+</head>
+<body>
+  <h2>CSS Box Model - Padding</h2>
+  <p>
+    padding : 콘텐츠 영역과 border 사이의 여백을 설정 <br />
+    상, 우, 하, 좌의 순서로 각각 위치의 여백을 따로 지정하거나 4가지 방향에 동일하게 지정 가능하다. (margin 과 동일)
+    <br />
+    특정 방향만 지정할 경우 padding-방향 속성을 별도로 사용한다. (padding-top, -bottom, -left, -right)
+  </p> 
+    <ul>
+      <span>속성 값</span>
+      <li>
+        크기 : 절대 값과 상대 값으로 적용 가능
+      </li>
+      <li>
+        백분율 : 부모 요소를 기준으로 상대적인 단위
+      </li>
+    </ul>
+    <ul>
+      <span class="span">값 개수</span>
+      <li>
+        1개의 값 : 4방향 모두 동일
+      </li>
+      <li>
+        2개의 값 : 상하 동일 & 좌우 동일
+      </li>
+      <li>
+        3개의 값 : 상 & 하 & 좌우 동일
+      </li>
+      <li>
+        4개의 값 : 상 하 좌 우 각각 적용
+      </li>
+    </ul> 
+    <hr />
+
+  <div class="ex">
+    <h2>Padding</h2>
+    <h3 class="padding">none</h3>
+    <h3 class="padding">20px</h3>
+    <h3 class="padding">20px 40px</h3>
+    <h3 class="padding">20px 30px 40px 80px</h3>
+    <h3 class="padding">-left 20px</h3>
+  </div>
+</body>
+</html>

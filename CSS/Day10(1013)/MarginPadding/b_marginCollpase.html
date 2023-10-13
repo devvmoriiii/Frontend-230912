@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/b_marginCollpase.css">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Margin Collapse (마진 중첩 | 마진 상쇄 현상)</h2>
+  <p>
+    Margin Collapse : 두 개 이상의 마진이 만나 적은 크기의 마진이 중복되는 현상, 주로 블록 레벨 요소에서 발생한다.
+  </p>
+  <ul>
+    <li>
+      <p>
+        수직 마진 중복 : 두 개의 인접한 블록 레벨 요소의 위쪽 마진과 아래쪽 마진이 만나서 중복 <br />
+        여러 요소를 세로 배치할 때, 맨 위의 마진과 맨 아래 마진에 비해 중간에 있는 마진이 지나치게 커지는 것을 방지
+      </p>
+      <li>
+        <p>
+          수평 마진 중복 : 오른쪽 마진과 왼쪽 마진이 만날 경우에는 중첩되지 않음
+        </p>
+      </li>
+      <br />
+    </ul>
+    <ul>
+      <span>중첩 방지 방법</span>
+      <li>
+        <p>
+          마진 대신 각각의 요소에 padding 을 적용
+        </p>
+      </li>
+      <li>
+        <p>
+          중첩된 요소에 oveflow: auto, hidden 적용
+        </p>
+      </li>
+    </ul>
+  <hr />
+
+  <div class="ex">
+    <h2>Margin Collapse</h2>
+    <p>
+      : 3가지 요소에 모두 상하 30px 를 적용하였으나 중첩 현상으로 인해 <br />1과 2 사이의 margin 과 2와 3 사이의 margin 이 60px (30 * 2) 가 아닌, 30px 로 처리.
+    </p>
+    <div class="marginCol">
+      <img src="images/icon_bunny.png" alt="" >
+    </div>
+    <div class="marginCol">
+      <img src="images/icon_bunny.png" alt="" >
+    </div>
+    <div class="marginCol">
+      <img src="images/icon_bunny.png" alt="" >
+    </div>
+  </div>
+</body>
+</html>
