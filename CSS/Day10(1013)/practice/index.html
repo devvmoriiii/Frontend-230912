@@ -8,6 +8,111 @@
   <title>HTML & CSS 복습</title>
 </head>
 <body>
-  
+  <header id="header">
+    <h1>Welcome to My website</h1>
+  </header>
+
+  <nav id="nav">
+    <ul id="nav-list">
+      <li><a href="#">Section 1</a></li>
+      <li><a href="#">Section 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="section1">
+      <h3>Section 1</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="imgWrap">
+      <a href="#">
+        <img src="images/devBunny1.png" alt="img1" id="linkImg">
+      </a>
+    </div>
+    </section>
+
+    <section id="section2">
+      <h3>Section 2</h3>
+      <img src="./image.png" alt="Example Image">
+      <form action="">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="id-wrap">
+            <div class="id-label">
+              <label for="userName">Name:</label>
+            </div>
+            <div class="id-input">
+              <input type="text" name="" id="userName" required autofocus>
+            </div>
+          </div>
+
+          <div class="pw-wrap">
+            <div class="pw-label">
+              <label for="userPW">Password:</label>
+            </div>
+            <div class="pw-input">
+              <input type="password" name="" id="userPW" required>
+            </div>
+          </div>
+
+          <div class="email-wrap">
+            <div class="email-label">
+              <label for="userEmail">Email:</label>
+            </div>
+            <div class="email-input">
+              <input type="email" name="" id="userEmail">
+            </div>
+          </div>
+
+          <div class="likeInput">
+            <div class="likeCheckQ-label-wrap">
+              <label for="likeCheck">Do you like this form?</label>
+            </div>
+            <div class="like-wrap">
+              <div class="like-label">
+                <label for="like">Yes</label>
+              </div>
+              <div class="like-input">
+                <input type="radio" name="likeUnlike" id="like" value="like">
+              </div>
+            </div>
+            <div class="unlike-wrap">
+              <div class="unlike-label">
+                <label for="unlike">No</label>
+              </div>
+              <div class="unlike-input">
+                <input type="radio" name="likeUnlike" id="unlike" value="unlike">
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-wrap">
+            <div class="comment-label">
+              <label for="comment">Comments:</label>
+            </div>
+            <div class="comment-textarea">
+              <textarea name="" id="comment"></textarea>
+            </div>
+          </div>
+
+          <div class="button-wrap">
+            <button type="submit" id="button">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
