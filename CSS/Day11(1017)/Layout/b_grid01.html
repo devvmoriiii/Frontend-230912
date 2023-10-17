@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="Styles/b_grid01.css">
+  <title>CSS Layout - Grid</title>
+</head>
+<body>
+  <!-- 
+    그리드 레이아웃 (Grid Layout)
+    : 웹 페이지 배치르 위한 2차원 레이아웃 시스템
+
+    ! 0. 단위
+    fr 단위 : 그리드 컨테이너에서 그리드 행과 열의 크기를 유연하게 조정할 수 있는 사용 가능한 공간 한 분율을 의미
+    > 공간을 비례적으로 분배 가능
+
+    ! 1. 그리드 레이아웃 정의
+    그리드 (Grid) : 수평선과 수직선으로 이루어진 집합체
+
+    그리드 컨테이너 (Grid Container) : 그리드 레이아웃 작성을 위해 그리드 컨테이너를 정의
+    컨테이너 내의 자식 요소들이 그리드 아이템으로 처리됨
+
+    그리드 아이템 (Grid item) : 그리드 컨테이너 내부의 모든 직접적인 자식 요소
+
+    행 & 열 (Rows & Columns) : 그리드 레이아웃의 경우 행과 열을 정의하고 그에 따라 아이템을 배치
+      행 ()
+  
+
+    !
+
+    ! 3. Grid Container 속성
+    (1) display
+    : 특정 요소를 그리드 컨테이너로 지정하는 속성
+    속성 값을 grid | inline-grid 로 지정
+      grid : 한 열의 그리드가 생성 (일반 흐름 - 아래)
+
+    
+    
+    ! 4. 행 & 열 속성과 함수
+    (1) grid-template-rows, grid-template-columns
+    : 행/열 을 정의하는 속성
+
+    길이 단위 | 백분율을 사용하여 행/열 트랙을 생성하거나
+    fr 단위를 사용하여 유연하게 생성 가능
+
+    고정 길이와 Fr단위를 혼합하여 사용 가능
+    > 고정 트랙에 필요한 공간이 우선 소전되고, 나머지 공간이 다른 트랙에 분배
+
+    너비 단위를 생성하려는 행/열 개수만큼 공백으로 구분하여 작성
+    (ex. grid-template-columns: 1fr 1fr 1fr;)
+
+
+    (2) row-gap, column-gap, gap
+    : 행/열/(행 열 모두) 사이의 간격을 지정하는 속성
+
+    길이 단위 | 백분율을 사용하여 간격을 지정하며,
+    fr 단위는 사용 불가
+
+
+    (3) repeat() 함수
+    : 트랙 목록의 전체 또는 일부 섹션을 반복하는 함수
+    repeat(반복 개수, 반복 너비) 형태로 작성
+    (ex. grid-template-columns: repeat(3, 1fr);)
+
+
+
+
+
+
+
+   -->
+
+   <h1>Simple grid example</h1>
+   <div class="container">
+    <div class="One">One</div>
+    <div class="Two">Two</div>
+    <div class="Three">Three</div>
+    <div class="Four">Four</div>
+    <div class="Five">Five</div>
+    <div class="Six">Six</div>
+    <div class="Seven">Seven</div>
+   </div>
+</body>
+</html>
