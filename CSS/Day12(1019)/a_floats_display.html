@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/a_floats_display.css">
+  <title>CSS Floats</title>
+</head>
+
+<body>
+  <!-- 
+    ! (1) float 속성
+    : 왼쪽 또는 오른쪽으로 배치하는 속성
+
+    p 태그와 같은 텍스트의 왼쪽이나 오른쪽에 이미지를 나란히 표시해야 하는 경우 사용
+
+    가로 배치 시, 요소에 기본 마진과 패딩이 적용되지 않음
+    별도로 패딩과 마진 부여 필수
+
+    속성 값
+      left : 해당 요소를 문서의 왼쪽에 배치
+      right : 해당 요소를 문서의 왼쪽에 배치
+      none : 죄우 어느 쪽에도 배치되지 않음 (기본 값)
+
+
+    ! (2) clear 속성
+    : float 속성을 해제하는 속성
+    flat 속성을 사용하여 웹의 요소를 좌우로 배치할 시, 그 다음에 넣는 다른 요소에도 동일하게 속성이 상속됨.
+    float 속성을 더 이상 사용하지 않을 경우 clear 속성 필수
+
+    속성 값
+      left : float 속성의 left 값을 해재
+      right : float 속성의 right 값을 해재
+      both : float 속성으 left/right 값을 모두 해제
+
+
+    ! (3) display 속성
+    : 요소가 웹 페이지에서 어떻게 표시되는지를 결정하는 속성으로, 각 값에 따라 요소의 레이아웃과 동작이 달라진다.
+
+    속성 값
+      block : 인라인 요소를 블록 레벨 요소로 전환
+      inline : 블록 레벨 요소를 인라인 레벨 요소로 전환
+
+      inline-block : 인라인 레벨 요소와 블록 레벨 요소 속성을 모두 가짐
+      inline 처럼 새로운 줄에서 시작하지 않으며, Block 처럼 지정된 너비와 높이, 마진과 패딩 지정 가능
+      수평 정렬된 메뉴(nav) 나 버튼 목록을 만들 때 사용
+
+      inline-flex : flex 속성을 갖지만 인라인 요소처럼 동작
+
+      inline-grid : grid 의 인라인 버전
+
+
+   -->
+  <h1>flaot 예제</h1>
+  <div class="box">float</div>
+  <p class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis aspernatur eos
+    corrupti explicabo? Natus culpa eos possimus beatae? Iure provident, eveniet vero similique vitae voluptatibus.
+    Adipisci maxime commodi at.</p>
+  <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis aspernatur eos
+    corrupti explicabo? Natus culpa eos possimus beatae? Iure provident, eveniet vero similique vitae voluptatibus.
+    Adipisci maxime commodi at.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis aspernatur eos corrupti explicabo?
+    Natus culpa eos possimus beatae? Iure provident, eveniet vero similique vitae voluptatibus. Adipisci maxime commodi
+    at.</p>
+  <hr />
+
+  <h2>display 예제</h2>
+  <nav>
+    <ul>
+      <li>menu 1</li>
+      <li>menu 2</li>
+      <li>menu 3</li>
+      <li>menu 4</li>
+    </ul>
+  </nav>
+  <hr />
+
+  <h2>inline-flex 예제</h2>
+  <div class="menu">
+    <button class="menu-item">About</button>
+    <button class="menu-item">Contact</button>
+    <button class="menu-item">Home</button>
+  </div>
+  <hr />
+
+  <h2>inline-grid 예제</h2>
+  <div class="widget">
+    <span class="icon">📅</span>
+    <span class="text">Calendar</span>
+  </div>
+</body>
+</html>

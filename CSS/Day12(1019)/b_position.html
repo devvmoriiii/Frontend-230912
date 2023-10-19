@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/b_position.css">
+  <title>CSS Posiiton</title>
+</head>
+
+<body>
+  <!-- 
+    ! (1) left, right, top, bottom 속성
+    : 웹 요소의 위치를 지정하는 속성
+    position 속성으로 기준 위치를 설정한 뒤, 요소의 위치를 좌/우/상/하 속성을 사용하여 값을 지정한다.
+    기준 위치와 요소 사이에 방향으로 얼마나 떨어져 있는지 지정
+
+    속성 명의 방향을 기준으로, 양수는 속성 명의 반대 방향 | 음수는 속성 명의 정방향으로 이동
+    (ex. top:-50px; left: 30px >> 위 방향으로 50px 이동, 오른쪽으로 30px 이동)
+
+    ! (2) position 속성
+    : 웹 문서에서 요소의 위치를 지정하는 속성으로, 배치 방법을 지정 (기준 위치)
+    텍스트나 이미지를 나란히 배치하거나, 원하는 위치를 선택 가능
+
+    속성 값
+      static : 특별한 위치 속성 없이 일반적인 문서 흐름에 따라 요소가 배치 (기본 값)
+      relative (상대적인) : static + 위치 값을 지정할 수 있음 (좌우상하 속성 사용 가능)
+      absolute (절대적인) : relative 값을 사용한 상위 요소를 기준으로 위치를 지정하여 배치 / 가장 가가운 위치가 지정된 부모 요소에 대해 상대적으로 배치
+      fixed (고정적인) : 브라우저 창을 기준으로 위치를 지정하여 배치 / 스크롤을 해도 위치가 변하지 않음
+      sticky : relative 와 fixed 의 조합처럼 작동 / 스크롤 위치에 따라 '붙어있게' 되거나 일반적인 위치에 머무름
+      
+
+
+-->
+
+  <p id="static">static : 특별한 위치 속성 없이 일반적인 문서 흐름에 따라 요소가 배치 (기본 값)
+  </p>
+  <p id="relative">relative (상대적인) : static + 위치 값을 지정할 수 있음 (좌우상하 속성 사용 가능)</p>
+  <div>
+    <p id="absolute">absolute (절대적인) : relative 값을 사용한 상위 요소를 기준으로 위치를 지정하여 배치 / 가장 가가운 위치가 지정된 부모 요소에 대해 상대적으로 배치</p>
+  </div>
+  <p id="fixed">fixed (고정적인) : 브라우저 창을 기준으로 위치를 지정하여 배치 / 스크롤을 해도 위치가 변하지 않음</p>
+  <p id="sticky">sticky : relative 와 fixed 의 조합처럼 작동 / 스크롤 위치에 따라 '붙어있게' 되거나 일반적인 위치에 머무름</p>
+  
+</body>
+
+</html>

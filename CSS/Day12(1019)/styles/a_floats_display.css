@@ -1,0 +1,67 @@
+body {
+  width: 50%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: darkblue;
+  border-radius: 5px;
+  pad: 10px;
+  color: #fff;
+  float: left;
+  margin-right: 15px;
+}
+
+.special {
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.clear {
+  clear: left;
+}
+
+/* display 예제 */
+ul li {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 0 20px;
+}
+
+
+/* inline-flex 예제 */
+.menu {
+  display: inline-flex;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.menu-item {
+  margin: 0 10px;
+}
+
+/* inline-grid 예제 */
+.widget {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.text {
+  font-size: 20px;
+}
