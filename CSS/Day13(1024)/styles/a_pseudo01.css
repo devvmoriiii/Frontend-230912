@@ -1,0 +1,52 @@
+/* target 예재 */
+.navi {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 150px;
+}
+
+.navi ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navi li {
+  margin-bottom: 5px;
+}
+
+.navi li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+  border: 1px solid transparent;
+  display: block;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.navi li a:hover, .navi li a:active, .navi li a:focus {
+  border: 1px solid cornflowerblue;
+  background-color: #f0f0f0;
+}
+
+#intro:target, #room:target, #pay:target, #reservation:target {
+  background-color: #0069e9;
+  color: #fff;
+}
+
+/* 폼 요소 예제*/
+input[type="checkbox"]:not(:checked) + label, input[type="radio"]:checked + label {  
+  font-weight: bold;
+  color: #0069e9;
+}
+
+input[type="text"]:enabled {
+  background-color: red;
+}
+
+input[type="text"]:disabled {
+  background-color: blue;
+}
+
+
+

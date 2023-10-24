@@ -1,0 +1,41 @@
+li:only-child {
+  background-color: #ccc;
+}
+
+p:only-of-type {
+  font-weight: 900;
+}
+
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: blue;
+}
+
+p:first-of-type {
+  color: green;
+}
+
+p:last-of-type {
+  text-decoration: underline;
+}
+
+li:nth-child(3) {
+  font-weight: 100;
+}
+
+p:nth-of-type(2) {
+  color: yellowgreen;
+}
+
+.section-title::before {
+  content: "##";
+  color: red;
+  margin: 0 5px;
+}
+
+.section p:last-child::after {
+  content: "♥️"
+}
