@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) and (max-height: 500px) and (orientation: portrait) {
+  body {
+    background-color: tomato;
+  }
+}
+
+@media screen and (aspect-ratio : 16/9) {
+  body {
+    background-color: aliceblue;
+  }
+}
+
+@media (hover:hover) {
+  body {
+    background-color: bisque;
+  }
+}
