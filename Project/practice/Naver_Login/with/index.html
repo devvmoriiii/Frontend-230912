@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>네이버 로그인 클론코딩 (with)</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <a href="https://www.naver.com/" class="logo
+      ">
+        <h1 class="blind">NAVER</h1>
+      </a>
+
+      <div class="lang">
+        <select name="" class="select">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+          <option value="chi1">中文(简体)</option>
+          <option value="chi2">中文(台灣)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="sign-in-wrap">
+      <form id="form">
+        <ul class="panel-wrap">
+          <li class="panel-item">
+            <div class="panel-inner">
+              <div class="ID-password-wrap">
+                <div class="inputRow">
+                  <!-- 아이디 아이콘 -->
+                  <div class="icon-cell">
+                    <span class="icon-id"></span>
+                  </div>
+                  <!-- 아이디 input -->
+                  <input type="text" class="input-text" name="id" id="id" placeholder="아이디" maxlength="41">
+                </div>
+                  <div class="inputRow">
+                    <!-- 비밀번호 아이콘 -->
+                    <div class="icon-cell">
+                      <span class="icon-PW"></span>
+                    </div>
+                    <!-- 비번 input -->
+                    <input type="password" class="input-text" name="pw" id="pw" placeholder="비밀번호" maxlength="41">
+                  </div>
+              </div>
+            </div>
+
+            <div class="sign-in-keep">
+              <div class="keepCheck">
+                <input type="checkbox" class="input-keep" id="login-keep" value="off" />
+                <label for="login-keep" class="keep-text">로그인 상태 유지</label>
+              </div>
+              <div class="ip-check"></div>
+            </div>
+
+            <div class="sign-in-error" style="display: none;">
+              <div class="error-msg">
+                <strong>아이디</strong>를 입력하세요
+              </div>
+            </div>
+
+            <div class="sign-in-btn-wrap">
+              <button type="button" class="button-text">로그인</button>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <ul class="find-wrap">
+      <li>
+        <a href="#" class="find-text">비밀번호 찾기</a>
+      </li>
+      <li>
+        <a href="#" class="find-text">아이디 찾기</a>
+      </li>
+      <li>
+        <a href="#" class="find-text">회원가입</a>
+      </li>
+    </ul>
+
+    <div class="banner-wrap">
+      <div class="banner-content">
+        <img src="images/banner.jpg" alt="adBanner" class="banner-img" />
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-inner">
+      <ul class="footer-link">
+        <li>
+          <a href="#" class="footer-item"><span class="text">이용약관</span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-item"><span class="text"><strong>개인정보처리방침</strong></span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-item"><span class="text">책임의 한계와 법적고지</span></a>
+        </li>
+        <li>
+          <a href="#" class="footer-item"><span class="text">회원정보 고객센터</span></a>
+        </li>
+      </ul>
+
+      <div class="footer-copy">
+        <a href="#">
+          <span class="footer-logo"></span>
+          <span class="blind">네이버</span>
+        </a>
+        <span class="text">Copyright</span>
+        <span class="copy">&copy; Naver Corp.</span>
+        <span class="text">All Rights Reserved.</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

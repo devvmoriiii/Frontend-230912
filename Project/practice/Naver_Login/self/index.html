@@ -4,31 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>네이버 로그인 클론코딩</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>네이버 로그인 클론코딩 (self)</title>
 </head>
 <body>
   <header>
-    <a href="https://www.naver.com/">본문 바로가기</a>
-    <h1><a href="https://www.naver.com/">NAVER</a></h1>
-    <select name="" id="">
-      <option value="ko">한국어</option>
-      <option value="en">English</option>
-      <option value="chi1">中文(简体)</option>
-      <option value="chi2">中文(台灣)</option>
-    </select>
+    <!-- <a href="https://www.naver.com/">본문 바로가기</a> -->
+    <div class="headerInner">
+      <a href="https://www.naver.com/">NAVER</a>
+      <h1 class="blind">NAVER</h1>
+    </div>
+
+    <div class="lang">
+      <select name="" id="">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="chi1">中文(简体)</option>
+        <option value="chi2">中文(台灣)</option>
+      </select>
+    </div>
   </header>
 
   <main>
-    <div id="loginWrap">
+    <div id="signInWrap">
       <div id="howToLogin">
         <ul>
           <li>
             <a
-              href="https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1#none">ID 로그인</a>
+              href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1&disposable=#none">ID 로그인</a>
           </li>
           <li>
             <a
-              href="https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1#none">일회용 번호</a>
+              href="https://nid.naver.com/nidlogin.login?mode=number&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1#none">일회용 번호</a>
           </li>
           <li>
             <a

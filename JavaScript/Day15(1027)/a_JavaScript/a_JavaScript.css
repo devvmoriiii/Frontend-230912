@@ -1,0 +1,9 @@
+button {
+  letter-spacing: 1;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: tomato;
+  color: #fff;
+  padding: 5px 20px;
+}
